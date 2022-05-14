@@ -1,0 +1,155 @@
+:root {
+    --pink-color: #CA1E4E;
+}
+
+.body { 
+    margin: 0 150px;
+    margin-top: 180px;
+}
+
+.body__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.body__header a {
+    text-decoration: none;
+}
+
+.body__header span:hover {
+    color: black;
+}
+
+.body__header span {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #949494;
+}
+
+.body__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body__body hr {
+    width: 0.5px;
+    border: none;
+    opacity: 0.5;
+    background-color: #949494;
+    
+}
+
+.search {
+    width: 25%;
+}
+
+.search input {
+    width: 80%;
+    padding-left: 15px;
+    height: 40px;
+    border: none;
+    border: 0.5px solid #949494;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.search button {
+    width: 18%;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--pink-color);
+    color: white;
+    cursor: pointer;
+}
+
+.img__text {
+    width: 70%;
+}
+
+.list__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.img__text .item {
+    position: relative;
+    width: 30%;
+    padding: 15px;
+    text-align: start;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    animation: item ease-in 0.7s;
+    transition: 0.25s;
+}
+
+@keyframes item {
+    from {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.img__text .item:hover {
+    transform: scale(1.05);
+}
+
+.img__text .item img {
+    width: 100%;
+    height: auto;
+}
+
+.item .icon {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #CA1E4E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon p {
+    color: white;
+}
+
+.new {
+    text-align: start;
+}
+
+.new h2 {
+    margin: 20px 0;
+}
+
+.new .table {
+    border: 1px solid #bababa;
+    border-radius: 10px;
+}
+
+.table__item {
+    display: flex;
+    height: 90px;
+    padding: 10px 10px 0 10px;
+    text-align: start;
+    border-bottom: 0.5px solid #bababa;
+}
+
+.table__item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.table__item span {
+    color: #444444;
+}

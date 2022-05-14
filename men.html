@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="icon" href="./assets/img/logo4.png" type="image/x-icon">
+    <title>D A B O T I N G</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div id="header" class="animation">
+            <!-- Header top -->
+            <div class="header__top">
+                <div class="header__top--register-login">
+                    <button class="header__top--register-login-btn btn_login">
+                        <p>LOGIN</p>
+                    </button>
+                    <hr>
+                    <button class="header__top--register-login-btn btn_register">
+                        <p>REGISTER</p>
+                    </button>
+                </div>
+                <a href="./home.html" class="header__top--logo" style="text-align: center; text-decoration: none; display: flex;">
+                    <img src="./assets/img/logo.png" style="width: 80px; height: 41.2px; margin-right: 10px;" alt="">
+                    <img src="./assets/img/name.png" style="height: 49px; width: auto; margin-top: 5px;" alt="">
+                </a>
+                <div class="header__top--cart">
+                    <div class="header__top-heart">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="count_favorite">0</span>
+                        <div class="heart__hover">
+                            <div class="heart__hover-head">
+                                <p>My Favourites</p>
+                            </div>
+                            <div class="heart__hover-body">
+                                <div  class="heart__hover-list">
+                                    <div class="no_favorite">
+                                        No favorite products yet
+                                    </div>
+                                </div>
+                                <div class="heart__add-cart">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__top-shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count_cart">0</span>
+                        <div class="shop__hover">
+                            <div class="cart__hover-head">
+                                <p>My Cart</p>
+                            </div>
+                            <div class="cart__hover-body">
+                                <div class="cart__hover-list">  
+                                    <div class="no_product">
+                                        Your cart has no products
+                                    </div>
+                                </div>
+                                <div class="cart_payment-pay">
+                                    <span>
+                                        Total money: <span class="total">0$</span>
+                                    </span>
+                                    <button>Payment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Lo go -->
+
+            <!-- Header Bottom -->
+            <div class="header__bottom">
+                <div class="header__bottom--list">
+
+                    <div class="header__bottom--item">
+                        <a href="./home.html" class="header__bottom--link ">HOME</a>
+                    </div>
+                    <div class="header__bottom--item">
+                        <a href="./introduce.html" class="header__bottom--link ">INTRODUCE</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./men.html" class="header__bottom--link header__bottom--link-main">MEN</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./women.html" class="header__bottom--link">WOMEN</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./kids.html" class="header__bottom--link">KIDS</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./others.html" class="header__bottom--link">OTHERS</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./news.html" class="header__bottom--link">NEWS</a>
+                    </div>                              
+                    <div class="header__bottom--item">
+                        <a href="./contact.html" class="header__bottom--link">CONTACT US</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Login vs Register -->
+
+        <!-- Form đăng ký -->
+        <div class="register">
+            <div class="register-content">
+                <div class="close-register">
+                    <button class="btn_close-register"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <h1>Register</h1>
+                <form>
+                    <div class="form-control">
+                        <input type="text" id="username" name="username" placeholder="Username"/>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" id="email" name="email" placeholder="Email"/>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Password"/>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="repassword" name="repassword" placeholder="Repassword"/>
+                    </div>
+                    <input type="submit" value="REGISTER"/>
+                    <div class="signup_link">
+                        I already have an account.    <a href="#">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Form đăng nhập -->
+        <div class="login">
+            <div class="login-content">
+                <div class="close-login">
+                    <button class="btn_close-login"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <h1>Login</h1>
+                <form>
+                    <div class="form-control">
+                        <input type="text" id="username" name="username" placeholder="Username"/>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="password" name="password" placeholder="Password"/>
+                    </div>
+                    <input type="submit" value="LOGIN"/>
+                    <div class="signup_link">
+                        I can't remember my password.    <a href="#">Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Body -->
+        
+        <div class="body">
+
+            <div class="fiter">
+                <div class="fiter__head">
+                    <a href="./home.html"><span>HOME</span></a>
+                    <span>/</span>
+                    <span style="color: black;">MEN</span> 
+                </div>
+                <div class="fiter__body">
+                    <span>FILTER BY PRICE</span>
+                    <div class="fiter__body--btn">
+                        <div><button class="active" price-btn="all"></button> <span>ALL</span></div>            
+                        <div><button price-btn="0"></button > <span>0-100$</span></div>
+                        <div><button price-btn="1"></button > <span>100-105$</span></div>
+                        <div><button price-btn="2"></button > <span>150-200$</span></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="table">
+                <table CellSpacing="35px">
+                    <tr class="price" price-btn="0">
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/1.png" alt="">
+                            <p>Promo Exclusion</p>
+                            <p class="red">60$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/2.png" alt="">
+                            <p>New Air Max OG</p>
+                            <p class="red">69$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/3.png" alt="">
+                            <p>Jordan LS</p>
+                            <p class="red">80$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/4.png" alt="">
+                            <p>Nike Metcon 7 AMP</p>
+                            <p class="red">95$</p>
+                            <button>Add Cart</button>
+                        </td>
+                    </tr>
+                    <tr class="price" price-btn="1">
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/5.png" alt="">
+                            <p>Nike Air Max Pre-Day</p>
+                            <p class="red">111$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/6.png" alt="">
+                            <p>Nike SB Zoom</p>
+                            <p class="red">123$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/7.png" alt="">
+                            <p>PG 6 EP</p>
+                            <p class="red">135$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/8.png" alt="">
+                            <p>Nike ZoomX Streakfly</p>
+                            <p class="red">149$</p>
+                            <button>Add Cart</button>
+                        </td>
+                    </tr>
+                    <tr class="price" price-btn="2">
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/9.png" alt="">
+                            <p>Nike Air Zoom Infinity</p>
+                            <p class="red">150$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/10.png" alt="">
+                            <p>Kyrie Infinity</p>
+                            <p class="red">169$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/11.png" alt="">
+                            <p>Nike ACG Lowcate</p>
+                            <p class="red">180$</p>
+                            <button>Add Cart</button>
+                        </td>
+                        <td>
+                            <img class="table__img" src="./assets/img/nam/12.png" alt="">
+                            <p>Jordan Max Aura 3</p>
+                            <p class="red">199$</p>
+                            <button>Add Cart</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer__content introduce">
+                    <h3>INTRODUCE</h3>
+                    <hr>
+                    <p>Welcome to DABOTING! Here, every word, every detail and every image is proof of DABOTING more than 3 month history and ever-evolving.</p>
+                </div>
+                <div class="footer__content address">
+                    <h3>ADDRESS</h3>
+                    <hr>
+                    <div class="address-item">
+                        <ul>
+                            <li style="display: flex;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span style="margin-left: 5px;">470 Tran Dai Nghia Street, Hoa Hai, Ngu Hanh Son, Da Nang 550000, Vietnam.</span>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-phone"></i> 0859021385
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i> <a href="mailto:datvt.21it@vku.udn.vn">datvt.21it@vku.udn.vn</a> 
+                                <p><a href="mailto:baonq.21it@vku.udn.vn">baonq.21it@vku.udn.vn</a></p>
+                                <p><a href="mailto:tinhcv.21it@vku.udn.vn">tinhcv.21it@vku.udn.vn</a></p>
+                                <p><a href="mailto:thangdt.21it@vku.udn.vn">thangdt.21it@vku.udn.vn</a></p>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="footer__content menu">
+                    <h3>MENU</h3>
+                    <hr>
+                    <div class="menu_link">
+                        <div>
+                            <ul>
+                                <li>
+                                    <a class="content_inside" href="./trangchu.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="content_inside content_hover" href="./men.html">Shop</a>
+                                </li>
+                                <li>
+                                    <a class="content_inside" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a class="content_inside" href="./introduce.html">Introduce</a>
+                                </li>
+                                <li>
+                                    <a class="content_inside" href="./news.html">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__content social_network">
+                    <h3>SOCIAL NETWORK</h3>
+                    <hr>
+                    <div class="social_network_item">
+                        <a href="https://www.facebook.com/profile.php?id=100069834352178" >
+                            <div class="icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="tooltip">Facebook</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon github">
+                                <i class="fab fa-github"></i>
+                                <span class="tooltip">Github</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span class="tooltip">Twitter</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span class="tooltip">Instagram</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span class="tooltip">Youtube</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./app/shop.js"></script>
+    <script src="./app/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

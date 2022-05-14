@@ -1,0 +1,144 @@
+
+:root {
+    --pink-color: #CA1E4E;
+}
+
+.body { 
+    margin: 0 150px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.body .fiter {
+    width: 22%;
+    background-color: white;
+}
+
+.fiter a {
+    text-decoration: none;
+    
+}
+
+.fiter a:hover {
+    color: black;
+}
+
+.fiter span {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #949494;
+}
+
+.fiter__body {
+    margin-top: 40px;
+}
+
+.fiter__body span {
+    color: black;
+    font-size: 18px;
+}
+
+.fiter__body--btn {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fiter__body--btn div {
+    margin: 20px 0;
+    display: flex;
+}
+
+.fiter__body--btn button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.fiter__body--btn button.active, .fiter__body--btn button:hover {
+    background-color: #CA1E4E;
+}
+
+
+.fiter__body--btn span {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+.body .table {
+    margin-top: 20px;
+    width: 75%;
+    background-color: white;
+}
+
+.table {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.table td:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.table td:hover .table__img {
+    transform: rotatey(180DEg);
+}
+
+.table img {
+    width: 200px;
+    height: auto;
+    transition: 0.01s ease-in-out;
+}
+
+.table .red {
+    padding: 10px;
+    color: red;
+}
+
+.table table button {
+    padding: 7px 15px;
+    border: none;
+    background-color: var(--pink-color);
+    color: white;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.table table button:hover {
+    transform: scale(0.8);
+}
+
+.table .price {
+    animation: hienGiay ease-in-out 1s;
+}
+
+@keyframes hienGiay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
